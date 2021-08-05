@@ -1,0 +1,13 @@
+{ 
+ "name": "Demo Organaization Workflow",
+ "description": "Demo Organaztion CI work flow template",
+ "iconName": "example-icon",
+ "categories": [
+    "Go"
+  ],
+  "filePatterns": [
+    "package.json$",
+    "^Dockerfile",
+    ".*\\.md$"
+    ]
+   }
