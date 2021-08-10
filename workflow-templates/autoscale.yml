@@ -1,0 +1,14 @@
+---
+apiversion: actions.summerwind.dev/v1alpha1
+kind: HorzontalRunnerAutoscaler
+metadata:
+ name example-runner-deployment-autoscaler
+spec:
+ scaletargetref:
+  name: example-runner-deployment
+ minRepicas: 1
+ maxRecplicas: 3
+ metrics:
+ - type: TotalNumberofQueuedAndinprogressworkflowruns
+   repositoryNames:
+   - actions-runner-controller/actions-runner-controller
