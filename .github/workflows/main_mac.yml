@@ -1,0 +1,13 @@
+name: Build on macOs
+on: [push, pull_request] 
+jobs:
+  build:
+   runs-on: macos-latest
+   steps:
+    - name: check out repository code
+      uses: actions/checkout@v2
+    - name: install GitHub CLI  
+      run: |
+       brew update
+       brew install --cask microsoft-edge
+
