@@ -10,4 +10,4 @@ jobs:
           sudo apt-get install jq
       uses: actions/checkout@v2
 name: "Build on ubuntu"
-true: pull_request
+true:  pull_request
